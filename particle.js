@@ -48,8 +48,8 @@ function Particle(position, velocity, force, dampening, radius) {
     this.attraction = function(partner, strength) {
         var subVector = p5.Vector.sub(this.position, partner.position);
         var dist = subVector.mag();
-        this.force.add(createVector(0,1));
-        partner.force.add(createVector(0,1));
+        this.force.add(createVector(0, 1));
+        partner.force.add(createVector(0, 1));
     }
 
     this.show = function() {
